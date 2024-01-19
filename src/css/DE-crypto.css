@@ -1,0 +1,86 @@
+body{
+    background-image: url(https://e0.pxfuel.com/wallpapers/795/574/desktop-wallpaper-crypto-currency-digital-art-abstract-bitcoin.jpg);
+}
+
+.container{
+    margin-left: 50px;
+    padding: 10px;
+}
+.container h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: aliceblue;
+}
+.label{
+    font-size: 1.0rem;
+    color: red;
+    font-weight: 900;
+    padding-right: 20px;
+}
+.input{
+    margin-top: 1.5rem;
+    width: 500px;
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid black;
+    height: 1.5rem;
+    outline: none;
+}
+.submit{
+    outline: none;
+    border: none;
+    font-weight: 900;
+}
+p{
+    font-weight: 900;
+}
+.container4{
+    
+}
+
+.col{
+    height: 50vh;
+}
+.blue-grey{
+    height: 50vh;
+}
+.container2{
+
+    display: grid;
+    grid-template-columns: repeat(4,minmax(100px,1fr));
+    grid-template-rows: repeat(25,minmax(100px,1fr));
+    
+}
+.card{
+    width: 15vw;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.1);
+} 
+/* .card1{
+    width: 60vw;
+} */
+.card1{
+    width: 70vw;
+}
+.card-title{
+    height: 10vh;
+}
+.card-image{
+    height: 40vh;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }}
+    @media(max-width: 899px){
+        .card{width: 20vw;}
+    }
+    @media(max-width:768px){
+        .card{
+            height:20vh;
+        }
+    }
