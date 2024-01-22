@@ -1,5 +1,8 @@
 body{
     background-image: url(https://e0.pxfuel.com/wallpapers/795/574/desktop-wallpaper-crypto-currency-digital-art-abstract-bitcoin.jpg);
+    background-size: cover;
+    background-repeat: repeat-x repeat-y;
+    background-size: 500px;
 }
 
 .container{
@@ -25,6 +28,7 @@ body{
     border-bottom: 1px solid black;
     height: 1.5rem;
     outline: none;
+    color: white;
 }
 .submit{
     outline: none;

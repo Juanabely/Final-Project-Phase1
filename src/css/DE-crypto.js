@@ -1,13 +1,16 @@
 document.addEventListener('DOMContentLoaded',()=>{
     console.log('ive been linked')
     const input = document.querySelector('.input')
+    //adds an event listener to the search button that when clicked performs the functions
     document.querySelector('.search-form').addEventListener('submit',(e)=>{
 e.preventDefault();
 console.log(input.value)
+//a callback function
 displayDecryptoNames();
+//a call back function
 displayExchangeRates();
     })
-
+//This function displays the available currencies on the fetched api
     function displayExchangeRates(){
         const api = `https://api.coinpaprika.com/v1/coins/${input.value}`
         // console.log(err)
@@ -15,9 +18,11 @@ displayExchangeRates();
         .then((response) => 
         response.json())
         .then((data)=>{
+            //manipulating the DOM and dispalying the data fetched from the api 
             console.log(data)
             const container =document.querySelector('.container3')
                 const innerContainer = document.createElement('div')
+            //used innerHTML to manipulate the DOM
                 innerContainer.innerHTML =`
                 
                 <div class="card card1">
@@ -43,6 +48,7 @@ displayExchangeRates();
                 
                 
                 `
+                //To avoid the undefined response to be displayed
                 if(data.name === undefined){
                     innerContainer.innerHTML = ''
                 }
@@ -58,7 +64,7 @@ displayExchangeRates();
 
 
 
-
+//This function displays the list of available currencies on the fetched api 
     function displayDecryptoNames (){
         const api = `https://api.n.exchange/en/api/v1/currency/`
         
